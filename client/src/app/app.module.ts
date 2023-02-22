@@ -6,10 +6,42 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
 import { Post2Component } from './post2/post2.component';
+import { ProductComponent } from './components/product/product.component';
+import { HeaderComponent } from './components/UI/header/header.component';
+import { FooterComponent } from './components/UI/footer/footer.component';
+import { ProductsComponent } from './components/products/products.component';
+import { BasketComponent } from './components/basket/basket.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { BaseComponent } from './components/base/base.component';
+import { DialogBoxComponent } from './components/dialog-box/dialog-box.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
-  declarations: [AppComponent, PostComponent, Post2Component],
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    PostComponent,
+    Post2Component,
+    ProductComponent,
+    HeaderComponent,
+    FooterComponent,
+    ProductsComponent,
+    BasketComponent,
+    ProductDetailsComponent,
+    BaseComponent,
+    DialogBoxComponent,
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
